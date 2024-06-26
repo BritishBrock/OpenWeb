@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using OpenWeb.Data;
+
 
 namespace OpenWeb;
 
@@ -22,7 +22,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		builder.Services.AddSingleton<WeatherForecastService>();
+		
 
 		return builder.Build();
 	}
